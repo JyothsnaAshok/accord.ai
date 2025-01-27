@@ -1,0 +1,58 @@
+{
+  "name": "accord",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/index.js --env-file='.env'",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --check **/*.js",
+    "prettier:fix": "prettier --write **/*.js"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "trailingComma": "all"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "@supabase/supabase-js": "^1.35.6",
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dayjs": "^1.11.4",
+    "docusign-esign": "^5.18.0",
+    "dotenv": "^16.4.7",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.2",
+    "filesize": "^9.0.11",
+    "helmet": "^5.1.1",
+    "http-status": "^2.1.0",
+    "lodash": "^4.17.21",
+    "multer": "^1.4.5-lts.1",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.14.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-react": "^7.29.4",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2"
+  },
+  "lint-staged": {
+    "*.js": "eslint --fix",
+    "*.{js,css,md}": "prettier --write"
+  }
+}

@@ -1,0 +1,14 @@
+.th {
+  padding: 0;
+}
+
+.control {
+  width: 100%;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-md);
+}
+
+.icon {
+  width: 21px;
+  height: 21px;
+  border-radius: 21px;
+}
